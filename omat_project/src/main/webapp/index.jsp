@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<h3> hello </h3>
+<h3>hello</h3>
 
 <h3> <a href="MemberJoinFrom.me">회원가입</a></h3>
 <h3> <a href="MemberLoginFrom.me">로그인</a></h3>
