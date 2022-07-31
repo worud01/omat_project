@@ -1,6 +1,7 @@
 package controller;
 
 
+
 import java.io.IOException;
 
 
@@ -27,6 +28,7 @@ public class MemberFrontController extends HttpServlet {
 		System.out.println(command);
 		ActionForward forward = null;
 		Action action = null;
+
 
 		
 		if (command.equals("/MemberJoinForm.me")) {
@@ -75,8 +77,6 @@ public class MemberFrontController extends HttpServlet {
 			}
 		}
 
-
-		
 		if (forward != null) {
 			if (forward.isRedirect()) {
 				response.sendRedirect(forward.getPath());
