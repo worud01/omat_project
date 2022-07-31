@@ -14,7 +14,7 @@ import javax.sql.DataSource;
 
 public class JdbcUtill {
 	public static Connection getConnection() {
-	
+	 
 		Connection con=null;
 		try {
 			try {
@@ -25,7 +25,7 @@ public class JdbcUtill {
 				con.setAutoCommit(false);// 자동 커밋 해체
 				//dml 작업후에는 수동으로 커밋 작업을 해야함
 				//rollback 작업을 수동으로 해야함
-			} catch (SQLException e) {
+			} catch (SQLException e) { 
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			} 
