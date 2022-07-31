@@ -14,7 +14,7 @@ import javax.sql.DataSource;
 
 public class JdbcUtill {
 	public static Connection getConnection() {
-	
+	 
 		Connection con=null;
 		try {
 			try {

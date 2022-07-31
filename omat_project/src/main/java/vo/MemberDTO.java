@@ -1,65 +1,103 @@
 package vo;
 
 import java.sql.Date;
-
+/*
+CREATE TABLE member (
+    id VARCHAR(16) PRIMARY KEY,
+    email VARCHAR(50) unique,
+    name VARCHAR(15) NOT NULL,
+    passwd VARCHAR(16) NOT NULL,
+    nick_name VARCHAR(15) NOT NULL,
+    birth_date VARCHAR(15) NOT NULL,
+    spicy_degree INT default 0,
+    hire_date DATE NOT NULL,
+    post_code VARCHAR(5),
+    address1 varchar(50),
+    address2 varchar(50)
+);
+*/
+//멤버 관리 하는 클래스
 public class MemberDTO {
-	private String member_name;
-	private String member_id;
-	private String member_pass;
-	private String member_email;
-	private String member_post_code;
-	private String member_address1;
-	private String member_address2;
-	private Date member_hire_date;
-	 
-	public String getMember_name() {
-		return member_name;
+	private String id;
+	private String email;
+	private String name;
+	private String passwd;
+	private String nick_name;
+	private String birth_date;
+	private int spicy_degree;
+	private Date hire_date;
+	private String post_code;
+	private String address1;
+	private String address2;
+	
+	public String getId() {
+		return id;
 	}
-	public void setMember_name(String member_name) {
-		this.member_name = member_name;
+	public void setId(String id) {
+		this.id = id;
 	}
-	public String getMember_id() {
-		return member_id;
+	public String getEmail() {
+		return email;
 	}
-	public void setMember_id(String member_id) {
-		this.member_id = member_id;
+	public void setEmail(String email) {
+		this.email = email;
 	}
-	public String getMember_pass() {
-		return member_pass;
+	public String getName() {
+		return name;
 	}
-	public void setMember_pass(String member_pass) {
-		this.member_pass = member_pass;
+	public void setName(String name) {
+		this.name = name;
 	}
-	public String getMember_email() {
-		return member_email;
+	public String getPasswd() {
+		return passwd;
 	}
-	public void setMember_email(String member_email) {
-		this.member_email = member_email;
+	public void setPasswd(String passwd) {
+		this.passwd = passwd;
 	}
-	public String getMember_post_code() {
-		return member_post_code;
+	public String getNick_name() {
+		return nick_name;
 	}
-	public void setMember_post_code(String member_post_code) {
-		this.member_post_code = member_post_code;
+	public void setNick_name(String nick_name) {
+		this.nick_name = nick_name;
 	}
-	public String getMember_address1() {
-		return member_address1;
+	public String getBirth_date() {
+		return birth_date;
 	}
-	public void setMember_address1(String member_address1) {
-		this.member_address1 = member_address1;
+	public void setBirth_date(String birth_date) {
+		this.birth_date = birth_date;
 	}
-	public String getMember_address2() {
-		return member_address2;
+	public int getSpicy_degree() {
+		return spicy_degree;
 	}
-	public void setMember_address2(String member_address2) {
-		this.member_address2 = member_address2;
+	public void setSpicy_degree(int spicy_degree) {
+		this.spicy_degree = spicy_degree;
 	}
-	public Date getMember_hire_date() {
-		return member_hire_date;
+	public Date getHire_date() {
+		return hire_date;
 	}
-	public void setMember_hire_date(Date member_hire_date) {
-		this.member_hire_date = member_hire_date;
+	public void setHire_date(Date hire_date) {
+		this.hire_date = hire_date;
+	}
+	public String getPost_code() {
+		return post_code;
+	}
+	public void setPost_code(String post_code) {
+		this.post_code = post_code;
+	}
+	public String getAddress1() {
+		return address1;
+	}
+	public void setAddress1(String address1) {
+		this.address1 = address1;
+	}
+	public String getAddress2() {
+		return address2;
+	}
+	public void setAddress2(String address2) {
+		this.address2 = address2;
 	}
 
+	 
+	
 
 }
