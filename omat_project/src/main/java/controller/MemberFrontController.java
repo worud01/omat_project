@@ -2,6 +2,7 @@ package controller;
 
 
 
+
 import java.io.IOException;
 
 
@@ -28,6 +29,7 @@ public class MemberFrontController extends HttpServlet {
 		System.out.println(command);
 		ActionForward forward = null;
 		Action action = null;
+
 
 
 		
@@ -76,6 +78,7 @@ public class MemberFrontController extends HttpServlet {
 				e.printStackTrace();
 			}
 		}
+
 
 		if (forward != null) {
 			if (forward.isRedirect()) {
