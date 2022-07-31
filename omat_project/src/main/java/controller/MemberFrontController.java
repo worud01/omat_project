@@ -1,12 +1,13 @@
 package controller;
 
+
 import java.io.IOException;
 
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+
+import javax.servlet.*;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
+
 
 import action.Action;
 import action.MemberChechDuplicateIdAction;
@@ -15,6 +16,7 @@ import action.MemberLoginProAction;
 import action.MemberLogoutAction;
 import action.MemberSendAuthMailAction;
 import vo.ActionForward;
+
 @WebServlet("*.me")
 public class MemberFrontController extends HttpServlet {
 	protected void doProcess(HttpServletRequest request, HttpServletResponse response)
@@ -25,6 +27,7 @@ public class MemberFrontController extends HttpServlet {
 		System.out.println(command);
 		ActionForward forward = null;
 		Action action = null;
+
 		
 		if (command.equals("/MemberJoinForm.me")) {
 			forward= new ActionForward();
@@ -71,6 +74,8 @@ public class MemberFrontController extends HttpServlet {
 				e.printStackTrace();
 			}
 		}
+
+
 		
 		if (forward != null) {
 			if (forward.isRedirect()) {
